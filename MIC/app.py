@@ -33,4 +33,4 @@ def toggle():
 
 if __name__ == '__main__':
     threading.Thread(target=audio_loop, daemon=True).start()
-    app.run(debug=False)
+    app.run(debug=False, host='0.0.0.0')
