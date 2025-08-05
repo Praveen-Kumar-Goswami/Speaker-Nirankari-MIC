@@ -1,4 +1,1 @@
 Flask==2.3.3
-sounddevice==0.4.6
-numpy==1.26.4
-
