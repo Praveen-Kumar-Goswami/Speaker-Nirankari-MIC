@@ -1,13 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Audio Mute Toggle</title>
+ <meta charset="UTF-8">
+    <title>Dhan Nirankar Ji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            font-family: 'Segoe UI', sans-serif;
+            color: #fff;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+
+        #toggleBtn {
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            background: #00c6ff;
+            background: linear-gradient(to right, #0072ff, #00c6ff);
+            border: none;
+            border-radius: 50px;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s ease;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+
+        #toggleBtn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+        }
+
+        #toggleBtn.muted {
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            #toggleBtn {
+                padding: 12px 30px;
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>Toggle Microphone Audio</h1>
+    <div class="container">
+        <h1>🎙️Nirankari MIC</h1>
   <button id="toggleBtn">Mute</button>
 
   <script src="script.js"></script>
 </body>
 </html>
+
