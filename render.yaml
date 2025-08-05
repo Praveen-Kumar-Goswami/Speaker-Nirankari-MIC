@@ -1,4 +1,0 @@
-services:
-  - type: static
-    name: audio-mute-app
-    staticPublishPath: .
